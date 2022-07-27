@@ -4,7 +4,7 @@ import ElementPlus from 'element-plus'
 import App from './App.vue'
 import router from './router'
 // import pinia from './plugins/pinia'
-import './assets/main.css'
+// import './assets/main.css'
 import 'element-plus/dist/index.css'
 import './scss/style.scss'
 // import { gsap, ScrollTrigger, Draggable, MotionPathPlugin } from "gsap/all"
