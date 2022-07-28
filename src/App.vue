@@ -4,16 +4,34 @@
 
 <template>
   <div id="app">
-    <el-main>
-      <h1>123456</h1>
-      <el-button type="danger">
-        <RouterLink to="/">Home</RouterLink>
-      </el-button>
-      <el-button type="primary">Primary</el-button>
-
-      <RouterLink to="/about">About</RouterLink>
-      <Router-view />
-    </el-main>
+    <el-container>
+      <el-header class="bar">
+        <h1 class="hidden-md-and-down">12fs456</h1>
+      </el-header>
+      <el-main>
+        <!-- <RouterLink to="/" tag="button">Home</RouterLink>
+        <RouterLink to="/about">About</RouterLink> -->
+        <el-button type="warning" @click="$router.push('/')">Home</el-button>
+        <el-button style="background-color: red;" @click="$router.push('about')">About</el-button>
+        <Router-view />
+        <el-row>
+          <el-col :span="6">a</el-col>
+          <el-col :span="6">b</el-col>
+          <el-col :span="6">c</el-col>
+          <el-col :span="6">d</el-col>
+        </el-row>
+      </el-main>
+    </el-container>
   </div>
 
 </template>
+
+<style scoped>
+h1 {
+  color: red;
+}
+
+.bar {
+  background: yellow;
+}
+</style>
